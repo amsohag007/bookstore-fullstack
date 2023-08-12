@@ -17,7 +17,7 @@ type BookCardProps = {
 const BookCard: React.FC<BookCardProps> = ({ title, discountRate, coverImage, price }) => (
   <div className="flex flex-col h-full justify-between border rounded shadow-md">
     <div className="h-[187px]">
-      <img src={coverImage} alt={title} className="object-cover w-full h-full " />
+      <img src={coverImage} alt={title} className="object-fit w-full h-full " />
     </div>
 
     <div className="p-2">
@@ -27,7 +27,7 @@ const BookCard: React.FC<BookCardProps> = ({ title, discountRate, coverImage, pr
           {discountRate}%
         </span>
         <span style={{ fontWeight: 700, color: '#080A0C' }} className={roboto.className}>
-          {price}원
+          {price.toLocaleString()}원
         </span>
       </div>
     </div>

@@ -16,7 +16,7 @@ interface BookCardListProps {
 const BookCardList: React.FC<BookCardListProps> = ({ data }) => {
   return (
     <>
-      <div className="grid xs:grid-cols-2 ss:grid-cols-3 sm:grid-cols-4 mt-1">
+      <div className="grid xs:grid-cols-2 ss:grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10  mt-1">
         {data.map((item, idx) => (
           <BookCard
             key={idx}
