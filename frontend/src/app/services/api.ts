@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:4000/api/v1';
+const API_BASE_URL = 'https://bookstore-fullstack-production.up.railway.app/api/v1';
 
 export const fetchData = async (page: number) => {
   try {
